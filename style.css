@@ -126,6 +126,17 @@ html {
     rgba(167, 166, 166, 0)
   );
 }
+.content .info .image h1 {
+  position: absolute;
+  font-size: 3.5vw;
+  width: 40%;
+  text-align: center;
+  font-weight: bolder;
+  bottom: 0;
+  left: 0;
+  margin: 3% 0;
+  color: white;
+}
 .info .text {
   background: linear-gradient(
     to bottom,
@@ -136,11 +147,11 @@ html {
   padding: 0 2%;
   text-align: justify;
 }
-.info .text h1 {
-  font-size: 9vw;
-}
 .info .text p {
-  font-size: 6vw;
+  font-size: 4vw;
+}
+.info .text p strong {
+  font-size: 5.5vw;
 }
 .content .btn {
   width: 100%;
@@ -158,6 +169,7 @@ html {
   font-weight: bold;
   transition: 0.3s;
   cursor: pointer;
+  margin-bottom: 5%;
 }
 
 button:hover {
@@ -172,6 +184,74 @@ a:hover {
   color: white !important;
 }
 
+/*Footer*/
+footer {
+  width: 100%;
+  padding: 3% 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .socialMedias {
+  width: 70%;
+}
+footer .socialMedias ul {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  justify-content: space-evenly;
+  width: 100%;
+}
+footer .socialMedias ul li {
+  width: 12%;
+}
+footer .socialMedias ul li a img {
+  width: 100%;
+}
+
+footer .contactForm {
+  width: 100%;
+}
+footer .contactForm p {
+  text-align: center;
+  color: white;
+  font-size: 7.5vw;
+}
+footer .contactForm form {
+  padding: 0 7%;
+  box-sizing: border-box;
+}
+footer .contactForm form p {
+  text-align: left;
+  color: white;
+  font-size: 4vw;
+}
+form input {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  color: white;
+  font-size: 3.5vw;
+}
+form textarea {
+  width: 100%;
+  height: 30vw;
+  font-size: 3.5vw;
+}
+footer .contactForm form button {
+  margin: 8% 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10vw;
+  background: rgb(189, 3, 3);
+  border-color: white;
+  border-radius: 3vw;
+  transition: 0.3s;
+}
 /*About Us*/
 .chapters {
   width: 100%;
@@ -211,10 +291,21 @@ a:hover {
     margin: 1% 0;
   }
   .info .text p {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
-  .info .text h1 {
-    font-size: 7vw;
+  .info .text p strong {
+    font-size: 5vw;
+  }
+  .content .info .image h1 {
+    position: absolute;
+    font-size: 3vw;
+    width: 40%;
+    text-align: center;
+    font-weight: bolder;
+    bottom: 0;
+    left: 0;
+    margin: 3% 0;
+    color: white;
   }
   .content .info {
     margin: auto;
@@ -253,16 +344,22 @@ a:hover {
     flex-direction: row;
   }
   .content .info .image {
-    width: 30%;
+    width: 50%;
+    position: relative;
+  }
+  .content .info .image h1 {
+    position: absolute;
+    font-size: 1.8vw;
+    width: 40%;
+    text-align: center;
+    font-weight: bolder;
+    bottom: 0;
+    left: 0;
+    margin: 3% 0;
+    color: white;
   }
   .content .info .text {
-    width: 70%;
-  }
-  .content .info .text h1 {
-    font-size: 4vw;
-    font-weight: bolder;
-    margin: 3% 0;
-    width: 60%;
+    width: 45%;
   }
   .content .info .text p {
     font-size: 1.3vw;
@@ -271,7 +368,7 @@ a:hover {
     font-size: 1.7vw;
   }
   .content .btn {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 0;
   }
@@ -301,6 +398,30 @@ a:hover {
   }
   #menuBar .options a:hover {
     background-color: maroon;
+  }
+  /*Footer*/
+  footer .socialMedias {
+    width: 30%;
+  }
+  footer .contactForm p {
+    font-size: 4.5vw;
+  }
+  footer .contactForm form p {
+    font-size: 1.8vw;
+  }
+  footer .contactForm form button {
+    width: 30%;
+    height: 5vw;
+    font-size: 2vw;
+    margin: 2% 0;
+    transform: translateX(0);
+  }
+  form input {
+    font-size: 2vw;
+  }
+  form textarea {
+    height: 10vw;
+    font-size: 1.8vw;
   }
   /*About Us*/
   .chapters {
