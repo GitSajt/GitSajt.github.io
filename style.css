@@ -344,7 +344,7 @@ footer .contactForm form button {
     flex-direction: row;
   }
   .content .info .image {
-    width: 50%;
+    width: 55%;
     position: relative;
   }
   .content .info .image h1 {
@@ -354,7 +354,7 @@ footer .contactForm form button {
     text-align: center;
     font-weight: bolder;
     bottom: 0;
-    left: 0;
+    left: 2%;
     margin: 3% 0;
     color: white;
   }
