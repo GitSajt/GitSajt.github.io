@@ -1,0 +1,273 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  background-color: maroon;
+}
+
+.container {
+  width: 100vw;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3),
+    rgba(170, 170, 170, 0.3)
+  );
+  box-sizing: border-box;
+  padding: 3% 2%;
+}
+.top .logo {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.top .logo p {
+  font-size: 4.5vw;
+  color: white;
+  font-family: "Courier New", Courier, monospace !important;
+}
+.top img {
+  width: 25%;
+}
+.top .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.top .menu button {
+  background: transparent;
+  border: none;
+  width: 50%;
+}
+.top .menu img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#menuBar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(85, 85, 85, 0.671);
+  box-sizing: border-box;
+  z-index: 1;
+}
+#menuBar .close {
+  display: flex;
+  padding: 4% 7%;
+  box-sizing: border-box;
+  justify-content: end;
+  width: 100%;
+  margin-bottom: 2vw;
+}
+#menuBar .close a {
+  font-size: 10vw;
+  font-weight: bolder;
+  color: white;
+}
+
+#menuBar .options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#menuBar .options a {
+  color: white;
+  text-decoration: none;
+  font-size: 10vw;
+  background-color: rgb(104, 0, 0);
+  margin: 2vw 0;
+  box-sizing: border-box;
+  padding: 0 7%;
+  cursor: pointer;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+}
+.info .image {
+  width: 100%;
+  background: white;
+  display: inline-block;
+  position: relative;
+}
+.info .image img {
+  display: block;
+  width: 100%;
+}
+.info .image .gradientImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(167, 166, 166, 0.5),
+    rgba(167, 166, 166, 0)
+  );
+}
+.info .text {
+  background: linear-gradient(
+    to bottom,
+    rgba(167, 166, 166, 0.5),
+    rgba(167, 166, 166, 0.3),
+    rgba(167, 166, 166, 0.5)
+  );
+  padding: 0 2%;
+  text-align: justify;
+}
+.info .text h1 {
+  font-size: 7vw;
+}
+.info .text p {
+  font-size: 4vw;
+}
+.content .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3% 0;
+}
+.content .btn button {
+  border: none;
+  width: 70%;
+  height: 10vw;
+  border-radius: 3vw;
+  background-color: brown;
+  font-size: 4vw;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 0.3s;
+  text-shadow: 0 0px 25px rgb(255, 255, 255);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.548));
+  color: white !important;
+}
+a:hover {
+  transition: 0.3s;
+  text-shadow: 0 0px 25px rgb(255, 255, 255);
+  color: white !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .top .logo {
+    width: 25%;
+    padding: 0 2%;
+  }
+  .top .logo img {
+    width: 20%;
+  }
+  .top .logo p {
+    font-size: 3.5vw;
+  }
+  .top .menu {
+    width: 20%;
+  }
+  #menuBar .close a {
+    font-size: 7vw;
+  }
+  #menuBar .options a {
+    font-size: 5vw;
+    margin: 1% 0;
+  }
+  .info .text p {
+    font-size: 3vw;
+  }
+  .info .text h1 {
+    font-size: 7vw;
+  }
+  .content .info {
+    margin: auto;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .top {
+    padding: 0;
+  }
+  .top .logo {
+    width: 20%;
+  }
+  .top .logo p {
+    font-size: 2.5vw;
+  }
+  .top .menu {
+    width: 10%;
+  }
+  .container {
+    padding: 0 2%;
+  }
+  .content {
+    width: 100%;
+  }
+  .content .info {
+    width: 100%;
+    flex-direction: row;
+  }
+  .content .info .image {
+    width: 70%;
+    height: 100%;
+  }
+  .content .info .text {
+    width: 25%;
+  }
+  .content .info .text h1 {
+    font-size: 4vw;
+    margin-bottom: 0;
+  }
+  .content .info .text p {
+    font-size: 1.8vw;
+  }
+  .content .btn {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .content .btn button {
+    font-size: 2vw;
+    height: 5vw;
+  }
+  #menuBar {
+    width: 30%;
+    right: 0;
+  }
+  #menuBar .close {
+    justify-content: left;
+  }
+  #menuBar .close a {
+    font-size: 4vw;
+    cursor: pointer;
+  }
+  #menuBar .options {
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+  #menuBar .options a {
+    font-size: 2.8vw;
+    transition: 0.3s;
+  }
+  #menuBar .options a:hover {
+    background-color: maroon;
+  }
+}
