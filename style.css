@@ -62,9 +62,10 @@ html {
   top: 0;
   width: 100vw;
   height: 100%;
-  background-color: rgba(85, 85, 85, 0.671);
+  background-color: rgba(85, 85, 85, 0.781);
   box-sizing: border-box;
   z-index: 1;
+  padding: 0 2%;
 }
 #menuBar .close {
   display: flex;
@@ -92,8 +93,9 @@ html {
   background-color: rgb(104, 0, 0);
   margin: 2vw 0;
   box-sizing: border-box;
-  padding: 0 7%;
+  padding: 1% 7%;
   cursor: pointer;
+  border-radius: 2vw;
 }
 
 .info {
@@ -135,10 +137,10 @@ html {
   text-align: justify;
 }
 .info .text h1 {
-  font-size: 7vw;
+  font-size: 9vw;
 }
 .info .text p {
-  font-size: 4vw;
+  font-size: 6vw;
 }
 .content .btn {
   width: 100%;
@@ -170,6 +172,19 @@ a:hover {
   color: white !important;
 }
 
+/*About Us*/
+.chapters {
+  width: 100%;
+  text-align: justify;
+  margin: auto;
+  font-size: 4vw;
+  background-color: rgba(180, 181, 182, 0.63);
+  padding: 2%;
+}
+.chapters b {
+  font-size: 6vw;
+}
+
 @media only screen and (min-width: 768px) {
   .top .logo {
     width: 25%;
@@ -192,14 +207,26 @@ a:hover {
     margin: 1% 0;
   }
   .info .text p {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .info .text h1 {
     font-size: 7vw;
   }
   .content .info {
     margin: auto;
-    width: 80%;
+    width: 100%;
+  }
+  /*About Us*/
+  .chapters {
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    font-size: 2.8vw;
+    background-color: rgba(180, 181, 182, 0.63);
+    padding: 2%;
+  }
+  .chapters b {
+    font-size: 5vw;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -226,17 +253,20 @@ a:hover {
     flex-direction: row;
   }
   .content .info .image {
-    width: 70%;
+    width: 40%;
     height: 100%;
   }
   .content .info .text {
-    width: 25%;
+    width: 60%;
   }
   .content .info .text h1 {
     font-size: 4vw;
-    margin-bottom: 0;
+    margin: 3% 0;
   }
   .content .info .text p {
+    font-size: 1.3vw;
+  }
+  .content .info .text p strong {
     font-size: 1.8vw;
   }
   .content .btn {
@@ -266,8 +296,21 @@ a:hover {
   #menuBar .options a {
     font-size: 2.8vw;
     transition: 0.3s;
+    border-radius: 1vw;
   }
   #menuBar .options a:hover {
     background-color: maroon;
+  }
+  /*About Us*/
+  .chapters {
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+    font-size: 1.8vw;
+    background-color: rgba(180, 181, 182, 0.63);
+    padding: 2%;
+  }
+  .chapters b {
+    font-size: 2.8vw;
   }
 }
