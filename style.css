@@ -18,11 +18,11 @@ html {
 
 .container {
   width: 100vw;
-  padding: 5% 5%;
+  padding: 20% 5% 0;
   box-sizing: border-box;
 }
 
-.top {
+#top {
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -38,34 +38,42 @@ html {
   padding: 3% 2%;
   z-index: 1;
 }
-.top .logo {
+#top .logo {
   width: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  cursor: pointer;
 }
-.top .logo p {
+#top .logo p {
   font-size: 4.5vw;
   color: white;
   font-family: "Courier New", Courier, monospace !important;
 }
-.top img {
+#top img {
   width: 25%;
 }
-.top .menu {
+#top .menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  width: 30%;
+  width: 60%;
 }
-.top .menu button {
+#top .menu button {
   background: transparent;
   border: none;
-  width: 50%;
+  width: 30%;
 }
-.top .menu img {
+#top .menu img {
   width: 100%;
   cursor: pointer;
+}
+#top .menu .app {
+  background: rgb(179, 3, 3);
+  width: 50%;
+  border-radius: 1vw;
+  padding: 2%;
+  font-size: 3.5vw;
 }
 
 #menuBar {
@@ -281,18 +289,26 @@ footer .contactForm form button {
 }
 
 @media only screen and (min-width: 768px) {
-  .top .logo {
+  #top .logo {
     width: 25%;
     padding: 0 2%;
   }
-  .top .logo img {
+  #top .logo img {
     width: 20%;
   }
-  .top .logo p {
+  #top .logo p {
     font-size: 3.5vw;
   }
-  .top .menu {
+  #top .menu {
+    width: 50%;
+  }
+  #top .menu button {
     width: 20%;
+  }
+  #top .menu .app {
+    width: 40%;
+    padding: 2%;
+    font-size: 2.3vw;
   }
   #menuBar .close a {
     font-size: 7vw;
@@ -332,17 +348,21 @@ footer .contactForm form button {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .top {
+  #top {
     padding: 0;
   }
-  .top .logo {
+  #top .logo {
     width: 20%;
   }
-  .top .logo p {
+  #top .logo p {
     font-size: 2.5vw;
   }
-  .top .menu {
-    width: 10%;
+  #top .menu {
+    width: 30%;
+  }
+  #top .menu .app {
+    border-radius: 0.5vw;
+    font-size: 1.3vw;
   }
   .container {
     padding: 7% 2%;
@@ -456,14 +476,14 @@ footer .contactForm form button {
 }
 
 @media only screen and (min-width: 1366px) {
-  .top .logo {
+  #top .logo {
     width: 13%;
   }
-  .top .logo p {
+  #top .logo p {
     font-size: 1.8vw;
   }
-  .top .menu {
-    width: 8%;
+  #top .menu {
+    width: 25%;
   }
   .container {
     padding: 5% 2%;

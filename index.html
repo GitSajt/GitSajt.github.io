@@ -12,20 +12,7 @@
     <title>Rumette - Vote for Trump</title>
   </head>
   <body>
-    <div class="top">
-      <div class="logo">
-        <img
-          src="assets/icons/03d9f398-d72f-41fd-a0f8-0c3cd23e2007.png"
-          alt="R"
-        />
-        <p>RUMETTE</p>
-      </div>
-      <div class="menu">
-        <button type="button" onclick="OpenMenu()">
-          <img src="assets/icons/menu.svg" alt="Menu" />
-        </button>
-      </div>
-    </div>
+    <div id="top"></div>
     <div id="menuBar">
       <div class="close">
         <a onclick="CloseMenu()">X</a>
@@ -36,6 +23,7 @@
         <a href="login.html">Login</a>
       </div>
     </div>
+
     <div class="container">
       <div class="content">
         <div class="info">
@@ -77,42 +65,7 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="socialMedias">
-        <p>Socials</p>
-        <ul>
-          <li>
-            <a href=""
-              ><img src="assets/icons/telegramWhite.svg" alt="Telegram"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="assets/icons/instagramWhite.svg" alt="Instagram"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="assets/icons/twitterWhite.svg" alt="Twitter"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="contactForm">
-        <p>Contact Us</p>
-        <form action="">
-          <p>First Name</p>
-          <input type="text" maxlength="32" />
-          <p>Last Name</p>
-          <input type="text" maxlength="32" />
-          <p>E-Mail</p>
-          <input type="email" />
-          <p>Message</p>
-          <textarea name="messages" id="contactMessage"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
   </body>
   <script src="script.js"></script>
 </html>
