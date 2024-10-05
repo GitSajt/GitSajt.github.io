@@ -1,14 +1,30 @@
 const menuBar = document.getElementById("menuBar");
 menuBar.style.display = "none";
 
+function loadMenu() {
+  const content = document.getElementById("menuBar");
+  const page = "menu.html";
+  var xmlHttp = new XMLHttpRequest();
+
+  xmlHttp.onreadystatechange = function () {
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+      content.innerHTML = xmlHttp.responseText;
+    }
+  };
+
+  start = new Date().getTime();
+
+  xmlHttp.open("GET", page, true); // true for asynchronous
+  xmlHttp.send(null);
+}
 function loadFooter() {
-  const footer = document.getElementById("footer");
+  const content = document.getElementById("footer");
   const page = "footer.html";
   var xmlHttp = new XMLHttpRequest();
 
   xmlHttp.onreadystatechange = function () {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-      footer.innerHTML = xmlHttp.responseText;
+      content.innerHTML = xmlHttp.responseText;
     }
   };
 
@@ -19,13 +35,13 @@ function loadFooter() {
 }
 
 function loadNav() {
-  const nav = document.getElementById("top");
+  const content = document.getElementById("top");
   const page = "navbar.html";
   var xmlHttp = new XMLHttpRequest();
 
   xmlHttp.onreadystatechange = function () {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-      nav.innerHTML = xmlHttp.responseText;
+      content.innerHTML = xmlHttp.responseText;
     }
   };
 
