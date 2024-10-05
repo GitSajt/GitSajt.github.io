@@ -282,7 +282,8 @@ footer .contactForm form button {
     rgba(99, 99, 99, 0.25),
     rgba(255, 255, 255, 0.25)
   );
-  padding: 2%;
+  padding: 3%;
+  box-sizing: border-box;
 }
 .chapters b {
   font-size: 6vw;
