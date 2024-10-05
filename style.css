@@ -6,26 +6,30 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
-  background-color: maroon;
+  background: linear-gradient(to bottom right, rgb(128, 2, 2), rgb(73, 0, 0));
 }
 
 .container {
   width: 100vw;
-  padding: 0 5%;
+  padding: 5% 5%;
   box-sizing: border-box;
 }
 
 .top {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.3),
-    rgba(170, 170, 170, 0.3)
+    rgba(0, 0, 0, 0.5),
+    rgba(128, 128, 128, 0.5)
   );
+  backdrop-filter: blur(3px);
   box-sizing: border-box;
+  width: 100%;
   padding: 3% 2%;
+  z-index: 1;
 }
 .top .logo {
   width: 40%;
@@ -62,7 +66,7 @@ html {
   top: 0;
   width: 100vw;
   height: 100%;
-  background-color: rgba(85, 85, 85, 0.781);
+  background-color: rgba(61, 1, 1, 0.95);
   box-sizing: border-box;
   z-index: 1;
   padding: 0 2%;
@@ -89,8 +93,9 @@ html {
 #menuBar .options a {
   color: white;
   text-decoration: none;
-  font-size: 10vw;
+  font-size: 9vw;
   background-color: rgb(104, 0, 0);
+  border: 0.5vw solid white;
   margin: 2vw 0;
   box-sizing: border-box;
   padding: 1% 7%;
@@ -140,9 +145,8 @@ html {
 .info .text {
   background: linear-gradient(
     to bottom,
-    rgba(167, 166, 166, 0.5),
-    rgba(167, 166, 166, 0.3),
-    rgba(167, 166, 166, 0.5)
+    rgba(122, 122, 122, 0.5),
+    rgba(167, 166, 166, 0.356)
   );
   padding: 0 2%;
   text-align: justify;
@@ -163,13 +167,17 @@ html {
   border: none;
   width: 70%;
   height: 10vw;
-  border-radius: 3vw;
-  background-color: brown;
   font-size: 4vw;
-  font-weight: bold;
-  transition: 0.3s;
-  cursor: pointer;
   margin-bottom: 5%;
+}
+
+button {
+  background: brown;
+  border: 0;
+  border-radius: 3vw;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 button:hover {
@@ -247,10 +255,6 @@ footer .contactForm form button {
   transform: translateX(-50%);
   width: 100%;
   height: 10vw;
-  background: rgb(189, 3, 3);
-  border-color: white;
-  border-radius: 3vw;
-  transition: 0.3s;
 }
 /*About Us*/
 .chapters {
@@ -334,7 +338,7 @@ footer .contactForm form button {
     width: 10%;
   }
   .container {
-    padding: 0 2%;
+    padding: 7% 2%;
   }
   .content {
     width: 100%;
@@ -354,9 +358,15 @@ footer .contactForm form button {
     text-align: center;
     font-weight: bolder;
     bottom: 0;
-    left: 2%;
+    left: 0;
     margin: 3% 0;
     color: white;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0)
+    );
+    padding: 2%;
   }
   .content .info .text {
     width: 45%;
@@ -395,13 +405,18 @@ footer .contactForm form button {
     font-size: 2.8vw;
     transition: 0.3s;
     border-radius: 1vw;
+    border: 2px solid white;
   }
   #menuBar .options a:hover {
     background-color: maroon;
   }
   /*Footer*/
+
   footer .socialMedias {
     width: 30%;
+  }
+  footer .contactForm {
+    width: 50%;
   }
   footer .contactForm p {
     font-size: 4.5vw;
@@ -410,11 +425,10 @@ footer .contactForm form button {
     font-size: 1.8vw;
   }
   footer .contactForm form button {
-    width: 30%;
+    width: 50%;
     height: 5vw;
     font-size: 2vw;
-    margin: 2% 0;
-    transform: translateX(0);
+    margin: 2% 50%;
   }
   form input {
     font-size: 2vw;
@@ -427,8 +441,30 @@ footer .contactForm form button {
   .chapters {
     width: 70%;
     font-size: 1.8vw;
+    margin-top: 1%;
   }
   .chapters b {
     font-size: 2.8vw;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .top .logo {
+    width: 13%;
+  }
+  .top .logo p {
+    font-size: 1.8vw;
+  }
+  .top .menu {
+    width: 8%;
+  }
+  .container {
+    padding: 5% 2%;
+  }
+  .chapters {
+    font-size: 1.5vw;
+  }
+  .chapters b {
+    font-size: 2.5vw;
   }
 }
