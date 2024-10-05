@@ -62,3 +62,4 @@ function CloseMenu() {
 
 loadFooter();
 loadNav();
+loadMenu();
