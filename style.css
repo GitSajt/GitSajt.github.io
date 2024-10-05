@@ -275,14 +275,15 @@ footer .contactForm form button {
 .chapters {
   width: 100%;
   text-align: justify;
-  margin: auto;
+  margin: 2vw auto;
+  transform: translateX(-2%);
   font-size: 4vw;
   background: linear-gradient(
     to bottom right,
     rgba(99, 99, 99, 0.25),
     rgba(255, 255, 255, 0.25)
   );
-  padding: 3%;
+  padding: 5%;
   box-sizing: border-box;
 }
 .chapters b {
