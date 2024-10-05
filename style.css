@@ -188,12 +188,6 @@ html {
 :nth-child(2 of .content) .image {
   width: 100%;
 }
-:nth-child(2 of .content) .text {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 2% 5%;
-  background: whitesmoke;
-}
 button {
   background: brown;
   border: 0;
@@ -372,10 +366,6 @@ footer .contactForm form button {
   :nth-child(2 of .content) .image {
     width: 30%;
   }
-  :nth-child(2 of .content) .text {
-    width: 30%;
-    padding: 2%;
-  }
 
   #menuBar {
     width: 30%;
@@ -466,9 +456,7 @@ footer .contactForm form button {
   .container {
     padding: 5% 2%;
   }
-  :nth-child(2 of .content) .text {
-    padding: 2%;
-  }
+
   .chapters {
     font-size: 1.5vw;
   }
