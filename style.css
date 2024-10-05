@@ -193,6 +193,7 @@ button {
   transition: 0.3s;
   font-weight: bold;
   cursor: pointer;
+  outline: 0;
 }
 
 button:hover {
