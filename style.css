@@ -382,6 +382,9 @@ footer .contactForm form button {
     width: 30%;
     padding: 2%;
   }
+  :nth-child(2 of .content) .text p {
+    font-size: 1.5vw;
+  }
 
   #menuBar {
     width: 30%;
