@@ -185,8 +185,20 @@ html {
   font-size: 4vw;
   margin-bottom: 5%;
 }
+:nth-child(2 of .content) {
+  flex-direction: row;
+}
 :nth-child(2 of .content) .image {
-  width: 100%;
+  width: 50%;
+}
+:nth-child(2 of .content) .text {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 2% 5%;
+  background: whitesmoke;
+}
+:nth-child(2 of .content) .text p {
+  font-size: 3.5vw;
 }
 button {
   background: brown;
@@ -366,6 +378,10 @@ footer .contactForm form button {
   :nth-child(2 of .content) .image {
     width: 30%;
   }
+  :nth-child(2 of .content) .text {
+    width: 30%;
+    padding: 2%;
+  }
 
   #menuBar {
     width: 30%;
@@ -456,7 +472,9 @@ footer .contactForm form button {
   .container {
     padding: 5% 2%;
   }
-
+  :nth-child(2 of .content) .text {
+    padding: 2%;
+  }
   .chapters {
     font-size: 1.5vw;
   }
